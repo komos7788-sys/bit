@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>코인대여플러스 안내</title>
+
+<style>
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,sans-serif; background:#fff; color:#222; }
+
+/* HEADER */
+header { 
+    width:100%; 
+    padding:20px 40px; 
+    display:flex; 
+    align-items:center; 
+    border-bottom:1px solid #eee; 
+}
+header img { height:28px; margin-right:22px; }
+header nav { display:flex; align-items:center; gap:24px; }
+header nav a { text-decoration:none; color:#333; font-size:15px; cursor:pointer; }
+header nav a:hover { opacity:.7; }
+
+/* HERO */
+.hero-wrap {
+    text-align:center; 
+    padding:80px 20px 60px; 
+    background:#fafafa;
+}
+
+/* INFO CARDS */
+.info-cards {
+    max-width:1000px; 
+    margin:70px auto; 
+    display:flex; 
+    gap:26px; 
+    justify-content:space-between;
+}
+
+.info-card {
+    flex:1;
+    position:relative;
+    border-radius:20px;
+    overflow:hidden;
+    padding:34px 26px 40px;
+    color:#222;
+    min-height:300px;
+
+    /* 🔥 정렬 안정화 (공통 적용) */
+    background-size: 180px auto !important;
+    background-repeat:no-repeat !important;
+    background-position: right 26px bottom 26px !important;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+}
+
+.info-card h3 { font-size:26px; margin-bottom:14px; font-weight:700; }
+.info-card p { font-size:17px; line-height:1.55; }
+
+/* 🎥 영상 정렬 안정화 */
+.CoinLendingIntro_coin-plus-intro-spot__video__ZXkv0 {
+    width:100%;
+    display:flex;
+    justify-content:center;   /* 중앙정렬 */
+    margin-top:20px;
+}
+
+.CoinLendingIntro_coin-plus-intro-spot__video__ZXkv0 video,
+.info-card video {
+    width:100%;
+    max-width:240px;
+    border-radius:14px;
+    margin:0 auto;
+    box-shadow:0 4px 16px rgba(0,0,0,0.25);
+}
+
+/* FAQ + STEP 공통 */
+.faq-section, .step-section { 
+    max-width:900px; 
+    margin:70px auto 40px; 
+    padding:0 20px; 
+}
+.faq-section h2, .step-section h2 {
+    font-size:28px; 
+    margin-bottom:16px; 
+    font-weight:700; 
+    text-align:center;
+}
+.faq-item, .step-item { border:1px solid #eee; border-radius:12px; overflow:hidden; margin-bottom:12px; }
+.faq-question, .step-question { padding:18px 20px; background:#f9f9f9; cursor:pointer; font-size:17px; font-weight:600; }
+.faq-answer, .step-answer { display:none; padding:18px 20px; font-size:15px; color:#555; line-height:1.6; border-top:1px solid #eee; }
+
+/* TOP3 CENTER */
+.intro_top { text-align:center; margin-top:80px; }
+.intro_top h2 { font-size:28px; font-weight:700; margin-bottom:6px; }
+.top-list-wrap { max-width:900px; margin:40px auto 0; padding:0 20px; }
+
+/* FOOTER */
+footer { 
+    text-align:center; padding:32px 20px; 
+    border-top:1px solid #eee; margin-top:80px; 
+}
+footer img { width:70px; opacity:0.7; margin-bottom:10px; }
+
+/* MOBILE */
+@media(max-width:860px){
+    .info-cards { flex-direction:column; }
+    .info-card { min-height:260px; background-size:140px auto !important; }
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+    <img src="https://www.bithumb.com/resources/img/comm/20171115_site_logo.png" />
+    <nav>
+        <a href="/">거래소</a>
+        <a href="">고객지원</a>
+        <a href="">회원가입</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero-wrap">
+    <h1 style="font-size:40px; font-weight:800; margin-bottom:16px;">투자금이 부족하세요?</h1>
+    <p style="font-size:22px; color:#444; margin-bottom:28px;">최소 30만원부터 최대 10억원까지 상향하여 대여해드립니다</p>
+
+    <button style="padding:14px 32px; background:#000; color:#fff; border:none; border-radius:10px; font-size:18px; cursor:pointer;">대여하기</button>
+
+    <div class="CoinLendingIntro_coin-plus-intro-spot__video__ZXkv0">
+      <video 
+        src="https://content.bithumb.com/resources/video/CoinLending/coin-lending-intro-video-car-2.mp4"
+        autoplay playsinline muted loop
+      ></video>
+    </div>
+</section>
+
+<!-- BENEFIT -->
+<section style="max-width:900px; margin:60px auto; padding:40px 20px; background:#fffbe8; border-radius:14px; border:1px solid #f0e6c3;">
+    <h2 style="font-size:28px; font-weight:700; margin-bottom:16px; text-align:center;">더 빠르게, 더 편하게 이용하세요</h2>
+    <p style="font-size:18px; color:#555; text-align:center; line-height:1.6;">
+        대출 승인률 상승, 간편 절차, 누구나 쉽게 이용 가능한 맞춤형 시스템으로<br>더욱 편리한 대여 서비스를 제공합니다.
+    </p>
+</section>
+
+<!-- INFO CARDS -->
+<section class="info-cards">
+
+    <div class="info-card" style="background-image:url('https://www.bithumb.com/react/static/68876c0f/media/coin-lending-intro-bg-more.bd7f955ed8480b3459d5.webp');">
+        <h3>더 많이 투자해요</h3>
+        <p>내가 설정한 담보로 가상자산을 빌릴 수 있어요.<br>빌린 자산을 원화로 매도해 투자 기회를 넓혀보세요.</p>
+    </div>
+
+    <div class="info-card" style="background-image:url('https://www.bithumb.com/react/static/68876c0f/media/coin-lending-intro-bg-change.d2986f0a2cb428cc70cc.webp');">
+        <h3>하락장에서도 수익을 얻어요</h3>
+        <p>빌린 가상자산을 팔고 시세가 하락할 때 사서 갚으면 수익이 생겨요.</p>
+
+        <div class="CoinLendingIntro_coin-plus-intro-spot__video__ZXkv0">
+          <video 
+            src="https://content.bithumb.com/resources/video/CoinLending/coin-lending-intro-video-graph-v5.mp4"
+            autoplay playsinline muted loop
+          ></video>
+        </div>
+    </div>
+
+    <div class="info-card" style="background-image:url('https://www.bithumb.com/react/static/68876c0f/media/coin-lending-intro-bg-safe.20e3384ed08b071f1975.webp');">
+        <h3>상환 시 자산 보호에 집중해요</h3>
+        <p>상환 시 시장 급락 등 위험을 줄이는 시스템을 운영해요.<br>안정성을 최우선으로 고려합니다.</p>
+    </div>
+
+</section>
+
+<!-- STEP -->
+<section class="step-section">
+    <h2>사용방법</h2>
+
+    <div class="step-item">
+        <div class="step-question">Step 1. 빗썸 앱을 설치해주세요.</div>
+        <div class="step-answer">앱스토어 또는 구글플레이에서 빗썸을 설치해주세요.</div>
+    </div>
+
+    <div class="step-item">
+        <div class="step-question">Step 2. 본인 인증을 완료해주세요.</div>
+        <div class="step-answer">휴대폰 인증 및 신원 인증을 완료하면 이용이 가능합니다.</div>
+    </div>
+
+    <div class="step-item">
+        <div class="step-question">Step 3. 담보 자산을 선택하고 신청해주세요.</div>
+        <div class="step-answer">담보로 사용할 코인을 선택하고 대여 절차를 진행합니다.</div>
+    </div>
+
+    <div class="step-item">
+        <div class="step-question">Step 4. 대여 금액을 확인하고 실행하세요.</div>
+        <div class="step-answer">설정한 금액을 확인하고 대여를 실행하면 완료됩니다.</div>
+    </div>
+</section>
+
+<!-- TOP3 -->
+<div class="intro_top">
+    <h2>사람들은 어떤 자산을 빌렸을까요?</h2>
+    <p>2025-11-28 대여 중 금액 TOP3</p>
+
+    <div class="top-list-wrap">
+        <div style="display:flex; align-items:center; justify-content:space-between; background:#f8f9fb; padding:22px 26px; border-radius:18px; margin-bottom:16px;">
+            <div style="display:flex; align-items:center; gap:14px;">
+                <img src="https://assets.coingecko.com/coins/images/325/large/Tether-logo.png" style="width:44px; height:44px;" />
+                <div style="font-size:19px; font-weight:700;">테더 <span style="font-size:14px; color:#666;">USDT</span></div>
+            </div>
+            <div style="font-size:18px; font-weight:700; color:#333;">24,845,485,208원</div>
+        </div>
+
+        <div style="display:flex; align-items:center; justify-content:space-between; background:#f8f9fb; padding:22px 26px; border-radius:18px; margin-bottom:16px;">
+            <div style="display:flex; align-items:center; gap:14px;">
+                <img src="https://assets.coingecko.com/coins/images/1/large/bitcoin.png" style="width:44px; height:44px;" />
+                <div style="font-size:19px; font-weight:700;">비트코인 <span style="font-size:14px; color:#666;">BTC</span></div>
+            </div>
+            <div style="font-size:18px; font-weight:700; color:#333;">3,882,772,322원</div>
+        </div>
+
+        <div style="display:flex; align-items:center; justify-content:space-between; background:#f8f9fb; padding:22px 26px; border-radius:18px;">
+            <div style="display:flex; align-items:center; gap:14px;">
+                <img src="https://assets.coingecko.com/coins/images/44/large/xrp-symbol-white-128.png" style="width:44px; height:44px;" />
+                <div style="font-size:19px; font-weight:700;">엑스알피 [리플] <span style="font-size:14px; color:#666;">XRP</span></div>
+            </div>
+            <div style="font-size:18px; font-weight:700; color:#333;">1,859,856,520원</div>
+        </div>
+    </div>
+</div>
+
+<!-- FAQ -->
+<section class="faq-section">
+    <h2>자주 묻는 질문</h2>
+
+    <div class="faq-item"><div class="faq-question">Q. 최소 대여 금액은 얼마인가요?</div><div class="faq-answer">A. 최소 30만원부터 가능합니다.</div></div>
+    <div class="faq-item"><div class="faq-question">Q. 최대 대여 한도는 어떻게 되나요?</div><div class="faq-answer">A. 최대 10억원까지 가능합니다.</div></div>
+    <div class="faq-item"><div class="faq-question">Q. 승인 심사는 얼마나 걸리나요?</div><div class="faq-answer">A. 평균 3~10분 이내 처리됩니다.</div></div>
+    <div class="faq-item"><div class="faq-question">Q. 신용 점수 영향이 있나요?</div><div class="faq-answer">A. 신용점수에 영향을 주지 않습니다.</div></div>
+</section>
+
+<script>
+document.querySelectorAll('.faq-item, .step-item').forEach(item=>{
+    const q=item.querySelector('.faq-question, .step-question');
+    const a=item.querySelector('.faq-answer, .step-answer');
+    if(q && a){
+        q.addEventListener('click',()=>{ 
+            a.style.display = a.style.display==='block' ? 'none' : 'block';
+        });
+    }
+});
+</script>
+
+<footer>
+    <img src="https://www.bithumb.com/resources/img/comm/20171115_site_logo.png" />
+    <div style="font-size:14px; color:#666; margin-top:6px;">
+        © 2025 코인대여플러스 안내 페이지
+    </div>
+</footer>
+
+</body>
+</html>
